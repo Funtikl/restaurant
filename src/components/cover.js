@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-
+import { Col, Media } from 'reactstrap';
+import { Parallax } from 'react-scroll-parallax';
 //styles
 import styles from './main.module.css';
 
@@ -10,9 +11,16 @@ import styles from './main.module.css';
 class Cover extends Component {
   render() {
     return (
-      <div className={styles.header}>
-     <h1>Hello World</h1>
-      </div>
+      <Parallax
+        className="custom-class"
+        offsetYMax={10}
+        offsetYMin={-40}
+        slowerScrollRate={true}
+        tag="figure"
+    >
+    <Media className={styles.coverPhoto} src={require('./images/cover.jpg')} />
+    </Parallax>
+  
     );
   }
 }
