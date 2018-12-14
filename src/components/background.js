@@ -8,17 +8,15 @@ import styles from './main.module.css';
 
 
 
-class Cover extends Component {
+class Bg extends Component {
   render() {
     return (
       <Parallax
-
-        offsetYMax={10}
-        offsetYMin={-40}
-        slowerScrollRate={true}
-        tag="figure"
+      offsetYMax={10}
+      offsetYMin={-40}
+      slowerScrollRate={true}
+      tag="figure"
     >
-    <Media className={styles.coverPhoto} src={require('./images/cover.jpg')} />
     <Media className={styles.coverPhoto2} src={require('./images/2.jpg')} />
 
     </Parallax>
@@ -27,4 +25,4 @@ class Cover extends Component {
   }
 }
 
-export default Cover;
+export default Bg;
